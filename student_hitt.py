@@ -58,9 +58,8 @@ class TimetableManager:
             self.fid_df,
             self.clash_df,
             self.name_df,
+            self.schedule_df
         ) = load()
-        # Load enriched schedule
-        self.schedule_df = load_enriched_schedule()
 
         # Build course lookup
         self.all_courses_df = self.schedule_df.drop_duplicates(
