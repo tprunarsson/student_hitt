@@ -55,11 +55,11 @@ def load_enriched_schedule(json_path="data/schedule_enriched.json"):
 
 
 def load() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    room_df = pd.read_csv('student_hitt/data/rooms.csv')
-    fid_df = pd.read_csv('student_hitt/data/field_courses.csv')
-    clash_df = pd.read_csv('student_hitt/data/clashes.csv')
-    name_df = pd.read_csv('student_hitt/data/course_names.csv')
-    schedule_df = load_enriched_schedule('student_hitt/data/schedule_enriched.json')
+    room_df = pd.read_csv('data/rooms.csv')
+    fid_df = pd.read_csv('data/field_courses.csv')
+    clash_df = pd.read_csv('data/clashes.csv')
+    name_df = pd.read_csv('data/course_names.csv')
+    schedule_df = load_enriched_schedule('data/schedule_enriched.json')
     return room_df, fid_df, clash_df, name_df, schedule_df
 
 
